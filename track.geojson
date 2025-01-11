@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [17.7253, 78.2572],
+          [78.3578, 17.4948],
+          [78.4583, 17.5402],
+          [78.4828, 17.6311],
+          [78.0820, 17.6248]
+        ]
+      },
+      "properties": {
+        "name": "Railway Track"
+      }
+    }
+  ]
+}

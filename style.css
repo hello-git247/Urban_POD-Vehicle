@@ -1,0 +1,210 @@
+:root {
+  --gutter: 20px;
+  --c-primary: #007bff; /* Primary color: Blue */
+  --c-secondary: #6c757d; /* Secondary color: Gray */
+  --c-success: #28a745; /* Success color: Green */
+  --c-danger: #dc3545; /* Danger color: Red */
+  --c-warning: #ffc107; /* Warning color: Yellow */
+  --c-info: #17a2b8; /* Info color: Cyan */
+  --c-light: #f8f9fa; /* Light color: Light Gray */
+  --c-dark: #343a40; /* Dark color: Dark Gray */
+  --c-white: #ffffff; /* White color */
+  --c-black: #000000; /* Black color */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--c-light);
+  color: var(--c-dark);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: var(--c-primary);
+  font-size: 36px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#bookingSection, #dataDisplay, #trackHealthSection, #trackingDetails, #map {
+  background-color: var(--c-white);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  color: var(--c-dark);
+}
+#healthProgressBar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#healthProgress {
+    height: 20px;
+    background-color: #76c7c0;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--c-dark);
+}
+
+input, select, button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--c-secondary);
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  padding: 12px;
+}
+
+button:hover {
+  background-color: var(--c-dark);
+  transform: scale(1.05);
+}
+
+#error, #success {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#bookingInfo {
+  margin-top: 20px;
+}
+
+#bookingDetails {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/* Container for tracking details and track health section */
+#trackingContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for tracking details and track health section */
+#trackingDetails, #trackHealthSection {
+    width: 48%;
+}
+
+/* Map styling */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Emergency stop button styling */
+#emergencyStopButton {
+    margin-top: 10px;
+}
+
+/* New styles for admin dashboard */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#adminSection {
+    margin: 20px;
+}
+
+.booking {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* New styles for admin dashboard */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.dashboard-section h3 {
+    color: #333;
+}
+
+.dashboard-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.dashboard-section button:hover {
+    background-color: #0056b3;
+}
+
+#mapSection {
+    width: 100%;
+    max-width: 600px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard-container">
+        <div class="dashboard-section" id="adminSection">
+            <h3>Manage Bookings</h3>
+            <button id="fetchBookings">Fetch All Bookings</button>
+            <div id="bookingsDisplay"></div>
+        </div>
+        <div class="dashboard-section" id="mapSection">
+            <h3>Live Tracking Map</h3>
+            <div id="map" style="height: 400px;"></div>
+        </div>
+        <div class="dashboard-section" id="aiInsightsSection">
+            <h3>AI-Powered Insights</h3>
+            <button id="fetchInsights">Get Insights</button>
+            <div id="insightsDisplay"></div>
+        </div>
+        <div class="dashboard-section" id="userManagement">
+            <h3>User Management</h3>
+            <button id="addUserButton">Add User</button>
+            <button id="removeUserButton">Remove User</button>
+        </div>
+        <div class="dashboard-section" id="trackingStats">
+            <h3>Tracking Statistics</h3>
+            <p>Total Distance: <span id="totalDistance">0</span> km</p>
+            <p>Total Trips: <span id="totalTrips">0</span></p>
+        </div>
+        <div class="dashboard-section" id="bookingStats">
+            <h3>Booking Statistics</h3>
+            <canvas id="bookingChart"></canvas>
+        </div>
+        <div class="dashboard-section" id="revenueStats">
+            <h3>Revenue Statistics</h3>
+            <canvas id="revenueChart"></canvas>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./assets/admin.js"></script>
+</body>
+</html>
